@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "UE4",
+            "type": "python",
+            "request": "launch",
+            "module": "pymavlink.tools.mavgen",
+            "args": ["--lang=UE4", "--wire-protocol=2.0", "--output=generated/ue4/include/mavlink/v2.0", "message_definitions/v1.0/standard.xml"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "CS",
+            "type": "python",
+            "request": "launch",
+            "module": "pymavlink.tools.mavgen",
+            "args": ["--lang=CS", "--wire-protocol=2.0", "--output=generated/cs/include/mavlink/v2.0", "message_definitions/v1.0/standard.xml"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "C++",
+            "type": "python",
+            "request": "launch",
+            "module": "pymavlink.tools.mavgen",
+            "args": ["--lang=C++11", "--wire-protocol=2.0", "--output=generated/cpp11/include/mavlink/v2.0", "message_definitions/v1.0/standard.xml"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "C",
+            "type": "python",
+            "request": "launch",
+            "module": "pymavlink.tools.mavgen",
+            "args": ["--lang=C", "--wire-protocol=2.0", "--output=generated/c/include/mavlink/v2.0", "message_definitions/v1.0/standard.xml"],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "WLua",
+            "type": "python",
+            "request": "launch",
+            "module": "pymavlink.tools.mavgen",
+            "args": ["--lang=WLua", "--wire-protocol=2.0", "--output=generated/lua/include/mavlink/v2.0", "message_definitions/v1.0/standard.xml"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
