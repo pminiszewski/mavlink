@@ -10,7 +10,7 @@
             "type": "python",
             "request": "launch",
             "module": "pymavlink.tools.mavgen",
-            "args": ["--lang=UE4", "--wire-protocol=2.0", "--output=generated/ue4/include/mavlink/v2.0", "message_definitions/v1.0/standard.xml"],
+            "args": ["--lang=UE4", "--wire-protocol=2.0", "--output=generated/ue4", "message_definitions/v1.0/standard.xml"],
             "console": "integratedTerminal"
         },
         {
